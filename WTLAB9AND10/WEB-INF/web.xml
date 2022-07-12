@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+<servlet>
+    <servlet-name>GetStudDept</servlet-name>
+    <servlet-class>vce.controller.StudDept</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>GetStudDept</servlet-name>
+    <url-pattern>/getdeptInfo.do</url-pattern>
+</servlet-mapping>
+ 
+
+</web-app>
