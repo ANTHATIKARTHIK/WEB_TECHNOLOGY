@@ -1,0 +1,17 @@
+#d1 {
+    text-align: center;
+}
+
+#d2 {
+    text-align: center;
+}
+button:hover{
+    background-color: green;
+}
+button{
+    background-color: red;
+    box-shadow: 0 7px grey;
+    border-radius: 8px;
+    height:30px;
+    width:90px;
+}

@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>LAB4_2</title>
+    <script>
+        function rand() {
+            return Math.floor(Math.random() * 300) + 1;
+        }
+
+        function imgresize() {
+            var no = rand();
+            document.getElementById("for").setAttribute("width", no);
+            document.getElementById("for").setAttribute("height", no);
+        }
+
+    </script>
+</head>
+
+<body>
+    <img src="../sunflower.png" id="for" width="200px" height="200px"><br>
+    <button onclick="imgresize()">RESIZE</button>
+</body>
+
+</html>

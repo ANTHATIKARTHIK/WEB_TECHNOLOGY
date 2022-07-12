@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="PARTA_1.css">
+        <script>
+            var i=0;
+            function next(){
+                var images=["river.jpg","pl.jpg","valley.jpg","mou.jpg","beach.jpg"];
+                if(i>=images.length)
+                    i=0;
+                document.getElementById("d3").src=images[i];
+                i++;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="d1"><button onclick="next()">NEXT</button></div><br><br>
+        <div id="d2"><img src="forest.jpg" id="d3" width="600px"></div>
+    </body>
+</html>

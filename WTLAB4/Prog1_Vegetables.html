@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prog1_Vegetables</title>
+    <script>
+        function myFunction() {
+            var sum = 0.0;
+            var price;
+           
+            do {
+                 var itemno = prompt("Enter item number:");
+                if (itemno == "end") {
+                    break;
+                }
+                             
+                switch (itemno) {
+                    case '1':                  
+                        price = 21.75;
+                        break;
+                    case '2':                
+                         price = 12.00;
+                        break;
+                    case '3':                    
+                   
+                         price = 7.50;
+                        break;
+                    case '4':
+                     
+                       
+                       price = 7.50
+                        break;
+                    case '5':
+                        price = 7.50
+                        break;
+                    default:
+                        alert("Enter valid item number");
+                        continue;
+                }
+                 var quantity = parseFloat(prompt("Enter quantity:"));
+                if (quantity<0) alert("Enter a valid quantity");
+                else sum= price*quantity;
+            } while (true);
+            document.write("TOTAL COST IS:" + sum);
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2>VEGETABLES SHOP:</h2>
+    <p>Tomatoes: ₹21.75</p>
+    <p> Onions: ₹12.00</p>
+    <p>Potato : ₹07.50</p>
+    <p>Brinjal : ₹09.25</p>
+    <p>Okra: ₹30.00</p>
+    <button onclick="myFunction()">Select vegetables</button>
+</body>
+
+</html>

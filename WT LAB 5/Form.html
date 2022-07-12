@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <style type="text/css">
+        body {
+            font-family: Calibri;
+        }
+
+        input[type="text"] {
+            width: 250px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 77px;
+            height: 27px;
+            position: relative;
+            left: 180px;
+        }
+
+        form {
+            text-align: center;
+            font-family: Calibri;
+            font-size: 20px;
+            border: 3px solid black;
+            width: 600px;
+            margin: 20px auto;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        td:first-child {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        td:last-child {
+            text-align: left;
+
+    </style>
+
+</head>
+
+<body>
+
+    <hr>
+    <form method="" action="" name="reg_form">
+        <h2> Student Registration Form</h2>
+        <img src="logo.jpg" style="text-align: center; height: 150px; width=150px">
+        <table>
+            <tr>
+                <td><label>UserName: </label></td>
+                <td>
+                    <input type="text" name="uname" placeholder="UserName">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Password: </label></td>
+                <td>
+                    <input type="password" name="pwd" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Email Id: </label></td>
+                <td>
+                    <input type="email" name="email" placeholder="example@gmail.com">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Mobile: </label></td>
+                <td>
+                    <input type="tel" pattern="[0-9]{10}" name="mobile">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Select Languages Known: </label></td>
+                <td>
+                    <input type="checkbox"  name="language" value="English">English
+                    <input type="checkbox"  name="language" value="Hindi">Hindi
+                    <input type="checkbox"  name="language" value="Telugu">Telugu
+                </td>
+            </tr>
+            <tr>
+                <td><label>Select Gender: </label></td>
+                <td>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="femele">Female
+                </td>
+            </tr>
+
+
+            <tr>
+                <td><label>Select State: </label></td>
+                <td>
+                    <select name="state">
+                        <option value="select state">select state</option>
+                        <option value="TELENGANA">TELENGANA</option>
+                        <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                        <option value="TAMIL NADU">TAMIL NADU</option>
+                        <option value="KARNATAKA">KARNATAKA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Give Your Comments: </label></td><br>
+                <td>
+                    <textarea id="comment" name="comments" rows="4" cols="50"></textarea>
+                </td>
+            </tr>
+             <tr>
+                <td><label>Select resume to Upload: </label></td>
+                <td>
+                    <input type="file" id="myFile" name="filename">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

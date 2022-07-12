@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="PARTA_3.css">
+        <script>
+            var images=["river.jpg","pl.jpg","valley.jpg","mou.jpg","beach.jpg"];
+            var i=images.length-1;
+            function next(){
+                document.getElementById("d3").src=images[i];
+                i--;
+                if(i==-1)
+                    {
+                        i=images.length-1;
+                    }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="d1"><button onclick="next()">PREVIOUS</button></div><br><br>
+        <div id="d2"><img src="forest.jpg" id="d3" width="600px"></div>
+    </body>
+</html>

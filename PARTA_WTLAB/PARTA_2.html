@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <style>
+        img{
+            border:3px solid black;
+        }
+    </style>
+    <script>
+        function rand() {
+            return Math.floor(Math.random() * 300) + 1;
+        }
+
+        function imgresize() {
+            var no = rand();
+            document.getElementById("labimg").setAttribute("width", no);
+            document.getElementById("labimg").setAttribute("height", no);
+        }
+        function func(){
+            
+            var x=document.getElementById("file");
+            document.getElementById("labimg").src=x.files[0].name;
+            imgresize();
+        }
+        function myfunc(){
+            var c =document.getElementById("bcolor").selectedIndex;
+            var bcolor=document.getElementById("bcolor").options[c].value;
+            document.getElementById("labimg").style.borderColor=bcolor;
+        }
+    </script>
+</head>
+
+<body>
+   <input type="file" id="file" onchange="func()"><br><br>
+    <img id="labimg" src=""><br><br>
+    <label>Choose a color:</label><br><br>
+    <select id="bcolor" onchange="myfunc()">
+        <option>Please choose an option</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+    </select>
+</body>
+
+</html>

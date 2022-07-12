@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Happy Numbers</title>
+    <script>
+        document.write("First 5 Happy numbers are : " + "<br>");
+
+        function happy_no(num) {
+            var m, n;
+            var c = [];
+            while (num != 1 && c[num] !== true) {
+                c[num] = true;
+                m = 0;
+                while (num > 0) {
+                    n = num % 10;
+                    m += n * n;
+                    num = (num - n) / 10;
+                }
+                num = m;
+            }
+            return (num == 1);
+        }
+
+        var cnt = 5;
+        var num = 1;
+        while (cnt-- > 0) {
+            while (!happy_no(num)) {
+                num++;
+            }
+            document.write(num + "<br>");
+
+            num++;
+        }
+    </script>
+</head></html>

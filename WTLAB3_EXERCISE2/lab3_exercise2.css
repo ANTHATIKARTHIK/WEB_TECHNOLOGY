@@ -1,0 +1,108 @@
+ .grid {
+     display: grid;
+     grid-template-columns: auto 50%;
+     grid-column-gap: 0.1px;
+     font-size: 15px;
+     color: grey;
+     padding-left: 5px;
+ }
+.gridlast{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    min-height:102px;
+    align-items: center;
+    min-width: 100%;
+    background-color: #E5354F;
+    
+}
+.top{
+    padding-bottom: 118px;
+}
+ .name {
+     color: black;
+     font-family: "Georgia";
+     
+ }
+
+ .menu {
+     font-family: "Georgia";
+     color: gray;
+ }
+#home{
+    color:lightskyblue;
+}
+#resume{
+    text-decoration: none;
+    color:gray;
+}
+body{
+    background-color: gainsboro;
+}
+.details{
+    color:white;
+    font-weight: bold;
+    padding-left: 23px;
+
+}
+.details2
+{
+    color:white;
+    font-weight: bold;
+    padding-left: 26px;
+    
+}
+.details3{
+    color:white;
+    font-weight: bold;
+    padding-left: 26px;
+}
+.details4{
+    color:white;
+    font-weight: bold;
+    padding-left: 27px;
+}
+.circle{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50%;
+    color:white;
+    height:100px;
+    width:100px;
+}
+#image{
+   width:280px;
+    height:260px;
+    border-radius: 50%;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.images{
+    float:left;
+
+}
+.last{
+    background-color: #E5354F;
+    padding-top: 20px;
+}
+#resum{
+    color:white;
+    text-decoration: none;
+}
+#cir1{
+    background-color: #E5354F;
+}
+#cir2{
+    background-color: #6ACCC0;
+}
+#cir3{
+    background-color: #C9D559;
+}
+#bit{
+    font-family:"Georgia";
+}
+#content{
+    color:grey;
+    font-family: "Calibri";
+    padding-top: 20px;
+}

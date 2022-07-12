@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Photos</title>
+    <script>
+        var k = 0;
+
+        function change() {
+            var img = ["img.jpg",
+                "img1.jpg",
+                "img2.jpg",
+                "img3.jpg",
+                "img4.jpg",
+                "img5.jpg"
+            ];
+            k++;
+            if (k > 5)
+                k = 0;
+
+            if (k == 0)
+                document.getElementById('chan').src = "img.jpg";
+            else
+                document.getElementById('chan').src = "img" + k + ".jpg";
+        }
+
+    </script>
+</head>
+
+<body>
+    <div style="text-align: center">
+        <button id="me" onclick="change()">CLick me</button>
+        <br>
+        <br>
+        <img id="chan" src="img.jpg"></img>
+    </div>
+</body>
+
+</html>
